@@ -6,7 +6,7 @@ for (let i = 0; i < dropdown.length; i++) {
 
 function showSub() {
   if (this.children.length > 1) {
-    this.children[1].style.height = "168px";
+    this.children[1].style.height = "auto";
     this.children[1].style.opacity = "1";
     this.children[1].style.overflow = "visible";
   } else {
