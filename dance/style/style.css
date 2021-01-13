@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   border-bottom: 1px solid #929292; }
+  .contacts-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .contacts__link {
     padding-bottom: 5px;
     margin: 0 auto; }
@@ -53,7 +56,7 @@
 
 .header {
   padding-top: 25px;
-  max-width: 1650px;
+  max-width: 1400px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,157 +132,220 @@
           font-size: 15px; } }
 
 .menu {
-  max-width: 1800px;
-  margin: 0 auto; }
-  .menu ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-  .menu a {
-    font-family: "EB Garamond", serif;
-    text-decoration: none;
-    color: #232323;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  /* Flexnav Base Styles */ }
+  .menu .flexnav {
+    -webkit-transition: none;
+    transition: none;
+    overflow: hidden;
+    margin: 0 auto;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 100%; }
-    .menu a:hover {
-      margin-top: -4px; }
-    @media (max-width: 800px) {
-      .menu a {
-        font-size: 25px; } }
-    @media (max-width: 600px) {
-      .menu a {
-        font-size: 14px;
-        line-height: 20px; } }
-  .menu__item {
-    display: block;
-    float: left;
+    max-height: 0; }
+  .menu .flexnav.opacity {
+    opacity: 0; }
+  .menu .flexnav.flexnav-show {
+    max-height: 2000px;
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+  .menu .flexnav.one-page {
+    position: fixed;
+    top: 50px;
+    right: 5%;
+    max-width: 200px; }
+  .menu .flexnav li {
+    font-size: 100%;
     position: relative;
-    border: 1px solid #929292;
-    height: 165px;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-    @media (max-width: 1100px) {
-      .menu__item:nth-child(n+1) {
-        width: 30%; } }
-    @media (max-width: 800px) {
-      .menu__item {
-        height: 120px; } }
-    @media (max-width: 600px) {
-      .menu__item {
-        height: 60px; } }
-    .menu__item:not(:last-child) {
-      border-right: none; }
-    .menu__item:hover {
-      background: #eee;
-      cursor: pointer;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      border-top: 5px solid #e3007b; }
-    .menu__item-dropdown {
-      background: #fff;
+    overflow: hidden;
+    padding-top: 40px; }
+  .menu .flexnav li a {
+    font-family: "EB Garamond", serif;
+    position: relative;
+    display: block;
+    height: 60px;
+    text-align: center;
+    z-index: 2;
+    overflow: hidden;
+    color: #222222;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  .menu .flexnav li ul {
+    width: 100%;
+    margin-left: -39px; }
+  .menu .flexnav li ul li {
+    font-size: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px; }
+  .menu .flexnav li ul.flexnav-show li {
+    overflow: visible; }
+  .menu .flexnav li ul li a {
+    display: block;
+    background: grey; }
+  .menu .flexnav ul li ul li a {
+    background: #bfbfbc; }
+  .menu .flexnav ul li ul li ul li a {
+    background: #cbcbc9; }
+  .menu .flexnav .touch-button {
+    position: absolute;
+    z-index: 999;
+    top: 60%;
+    right: 50%;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    text-align: center; }
+  .menu .flexnav .touch-button:hover {
+    cursor: pointer; }
+  .menu .flexnav .touch-button .navicon {
+    position: relative;
+    top: 1.4em;
+    font-size: 12px;
+    color: #666; }
+  .menu .menu-button {
+    position: relative;
+    display: block;
+    padding: 1em;
+    background: #a6a6a2;
+    color: #222222;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  .menu .menu-button.one-page {
+    position: fixed;
+    top: 0;
+    right: 5%;
+    padding-right: 45px; }
+  .menu .menu-button .touch-button {
+    background: transparent;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center; }
+  .menu .menu-button .touch-button .navicon {
+    font-size: 16px;
+    position: relative;
+    top: 1em;
+    color: #666; }
+  @media all and (min-width: 800px) {
+    .menu body.one-page {
+      padding-top: 70px; }
+    .menu .flexnav {
+      overflow: visible; }
+    .menu .flexnav.opacity {
+      opacity: 1; }
+    .menu .flexnav.one-page {
+      top: 0;
+      right: auto;
+      max-width: 1080px; }
+    .menu .flexnav li {
+      position: relative;
+      list-style: none;
+      float: left;
+      display: block;
+      background-color: #fff;
+      overflow: visible;
+      width: 14%; }
+    .menu .flexnav li a {
+      border-bottom: none; }
+    .menu .flexnav li > ul {
       position: absolute;
-      top: 160px;
-      display: none;
-      border: 1px solid #929292;
-      border-top: 5px solid #e3007b;
-      width: 378px;
-      left: 0;
-      height: 0;
-      opacity: 0;
-      overflow: hidden;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      padding-left: 20px; }
-      @media (max-width: 800px) {
-        .menu__item-dropdown {
-          top: 115px; } }
-      @media (max-width: 600px) {
-        .menu__item-dropdown {
-          top: 55px; } }
-      .menu__item-dropdown-item {
-        padding-left: 20px; }
-        .menu__item-dropdown-item a {
-          font-size: 20px;
-          text-align: left;
-          padding: 0;
-          display: inline;
-          height: 100%; }
-          @media (max-width: 600px) {
-            .menu__item-dropdown-item a {
-              font-size: 10px; } }
-        .menu__item-dropdown-item:hover {
-          background: #eee; }
+      top: auto;
+      left: 0; }
+    .menu .flexnav li > ul li {
+      width: 100%;
+      background-color: grey; }
+    .menu .flexnav li ul li > ul {
+      margin-left: 100%;
+      top: 0; }
+    .menu .flexnav li ul li a {
+      border-bottom: none; }
+    .menu .flexnav li ul.open {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      z-index: 1; }
+    .menu .flexnav li ul.open li {
+      overflow: visible;
+      max-height: 100px; }
+    .menu .flexnav li ul.open ul.open {
+      margin-left: 100%;
+      top: 0; }
+    .menu .menu-button {
+      display: none; } }
+  .menu .oldie body.one-page {
+    padding-top: 70px; }
+  .menu .oldie .flexnav {
+    overflow: visible; }
+  .menu .oldie .flexnav.one-page {
+    top: 0;
+    right: auto;
+    max-width: 1080px; }
+  .menu .oldie .flexnav li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    background-color: #a6a6a2;
+    width: 20%;
+    min-height: 50px;
+    overflow: visible; }
+  .menu .oldie .flexnav li:hover > ul {
+    display: block;
+    width: 100%;
+    overflow: visible; }
+  .menu .oldie .flexnav li:hover > ul li {
+    width: 100%;
+    float: none; }
+  .menu .oldie .flexnav li a {
+    border-left: 1px solid #acaca1;
+    border-bottom: none;
+    overflow: visible; }
+  .menu .oldie .flexnav li > ul {
+    background: #acaca1;
+    position: absolute;
+    top: auto;
+    left: 0;
+    display: none;
+    z-index: 1;
+    overflow: visible; }
+  .menu .oldie .flexnav li ul li ul {
+    top: 0; }
+  .menu .oldie .flexnav li ul li a {
+    border-bottom: none; }
+  .menu .oldie .flexnav li ul.open {
+    display: block;
+    width: 100%;
+    overflow: visible; }
+  .menu .oldie .flexnav li ul.open li {
+    width: 100%; }
+  .menu .oldie .flexnav li ul.open ul.open {
+    margin-left: 100%;
+    top: 0;
+    display: block;
+    width: 100%;
+    overflow: visible; }
+  .menu .oldie .flexnav ul li:hover ul {
+    margin-left: 100%;
+    top: 0; }
+  .menu .oldie .menu-button {
+    display: none; }
+  .menu .oldie.ie7 .flexnav li {
+    width: 19.9%; }
 
 .photo {
-  max-width: 1800px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  @media (max-width: 600px) {
-    .photo {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
-  .photo div {
-    width: 50%;
-    height: 675px;
-    background-size: cover; }
-    @media (max-width: 1500px) {
-      .photo div {
-        height: 540px; } }
-    @media (max-width: 1100px) {
-      .photo div {
-        background-position: center; } }
-    @media (max-width: 800px) {
-      .photo div {
-        height: 400px; } }
-    @media (max-width: 600px) {
-      .photo div {
-        width: 100%; } }
-  .photo-1 {
-    background: url(../img/image1.jpg) center no-repeat; }
-  .photo-2 {
-    background: url(../img/image2.jpg) no-repeat; }
+  max-width: 1400px;
+  margin: 0 auto; }
+  .photo .slide img {
+    width: 500px;
+    margin: 0 auto; }
 
 .info {
-  max-width: 1800px;
+  max-width: 1400px;
   margin: 0 auto; }
   .info-title {
     font-family: "EB Garamond", serif;
@@ -325,7 +391,7 @@
             flex-wrap: wrap; } }
 
 .partner {
-  max-width: 1800px;
+  max-width: 1400px;
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 80px; }
@@ -357,7 +423,7 @@
   padding-top: 30px;
   padding-bottom: 50px; }
   .footer-wrap {
-    max-width: 1800px;
+    max-width: 1400px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
