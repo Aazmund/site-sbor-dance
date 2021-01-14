@@ -49,9 +49,8 @@
     </header>
 
     <div class="menu">
-      <div class="menu-button">Menu</div>
       <nav>
-        <ul data-breakpoint="800" class="flexnav">
+        <ul class="menu__list">
           <li>
             <a href="">НОВОСТИ</a>
           </li>
@@ -63,7 +62,8 @@
           </li>
           <li>
             <a href="">COVID-19</a>
-            <ul>
+            <span class="arrow menu-arrow"></span>
+            <ul class="menu__list-sub">
               <li><a href="#">ДИСТАНЦИОННОЕ ОБУЧЕНИЕ</a></li>
               <li><a href="#">РАБОТА НАД СОБОЙ ВО ВРЕМЯ САМОИЗОЛЯЦИИ</a></li>
               <li><a href="#">ИНФОРМАЦИЯ</a></li>
@@ -75,7 +75,8 @@
 
           <li>
             <a href="#">ДОСТИЖЕНИЯ</a>
-            <ul>
+            <span class="arrow menu-arrow"></span>
+            <ul class="menu__list-sub">
               <li><a href="#">СТАТЬИ ОБ АНСАМБЛЯХ ГТЦ</a></li>
               <li><a href="#">ГАЛЕРЕЯ</a></li>
               <li><a href="#">WELTTANZ-GALA BADEN-BADEN</a></li>
@@ -159,19 +160,7 @@
         </div>
       </div>
     </footer>
-    <script src="JS/jquery.js"></script>
-    <script src="JS/slider.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript">
-      //$.noConflict();
-    </script>
-    <script src="js/jquery.flexnav.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      jQuery(document).ready(function ($) {
-        // initialize FlexNav
-        $(".flexnav").flexNav();
-      });
-    </script>
+    <script src="JS/menu.js"></script>
     <link rel="stylesheet" href="JS/slick/slick.css" />
     <link rel="stylesheet" href="JS/slick/slick-theme.css" />
     <script src="JS/jquery.js"></script>

@@ -133,209 +133,70 @@
 
 .menu {
   max-width: 1400px;
-  margin: 0 auto;
-  /* Flexnav Base Styles */ }
-  .menu .flexnav {
-    -webkit-transition: none;
-    transition: none;
-    overflow: hidden;
-    margin: 0 auto;
-    width: 100%;
-    max-height: 0; }
-  .menu .flexnav.opacity {
-    opacity: 0; }
-  .menu .flexnav.flexnav-show {
-    max-height: 2000px;
-    opacity: 1;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out; }
-  .menu .flexnav.one-page {
-    position: fixed;
-    top: 50px;
-    right: 5%;
-    max-width: 200px; }
-  .menu .flexnav li {
-    font-size: 100%;
-    position: relative;
-    overflow: hidden;
-    padding-top: 40px; }
-  .menu .flexnav li a {
+  margin: 0 auto; }
+  .menu a {
     font-family: "EB Garamond", serif;
-    position: relative;
-    display: block;
-    height: 60px;
-    text-align: center;
-    z-index: 2;
-    overflow: hidden;
-    color: #222222;
-    background: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
-  .menu .flexnav li ul {
-    width: 100%;
-    margin-left: -39px; }
-  .menu .flexnav li ul li {
-    font-size: 100%;
-    position: relative;
-    overflow: hidden;
-    padding-top: 20px; }
-  .menu .flexnav li ul.flexnav-show li {
-    overflow: visible; }
-  .menu .flexnav li ul li a {
-    display: block;
-    background: grey; }
-  .menu .flexnav ul li ul li a {
-    background: #bfbfbc; }
-  .menu .flexnav ul li ul li ul li a {
-    background: #cbcbc9; }
-  .menu .flexnav .touch-button {
-    position: absolute;
-    z-index: 999;
-    top: 60%;
-    right: 50%;
-    width: 5px;
-    height: 5px;
-    display: inline-block;
-    text-align: center; }
-  .menu .flexnav .touch-button:hover {
-    cursor: pointer; }
-  .menu .flexnav .touch-button .navicon {
-    position: relative;
-    top: 1.4em;
-    font-size: 12px;
-    color: #666; }
-  .menu .menu-button {
-    position: relative;
-    display: block;
-    padding: 1em;
-    background: #a6a6a2;
-    color: #222222;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-  .menu .menu-button.one-page {
-    position: fixed;
-    top: 0;
-    right: 5%;
-    padding-right: 45px; }
-  .menu .menu-button .touch-button {
-    background: transparent;
-    position: absolute;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    text-align: center; }
-  .menu .menu-button .touch-button .navicon {
     font-size: 16px;
-    position: relative;
-    top: 1em;
-    color: #666; }
-  @media all and (min-width: 800px) {
-    .menu body.one-page {
-      padding-top: 70px; }
-    .menu .flexnav {
-      overflow: visible; }
-    .menu .flexnav.opacity {
-      opacity: 1; }
-    .menu .flexnav.one-page {
-      top: 0;
-      right: auto;
-      max-width: 1080px; }
-    .menu .flexnav li {
-      position: relative;
-      list-style: none;
-      float: left;
-      display: block;
-      background-color: #fff;
-      overflow: visible;
-      width: 14%; }
-    .menu .flexnav li a {
-      border-bottom: none; }
-    .menu .flexnav li > ul {
-      position: absolute;
-      top: auto;
-      left: 0; }
-    .menu .flexnav li > ul li {
-      width: 100%;
-      background-color: grey; }
-    .menu .flexnav li ul li > ul {
-      margin-left: 100%;
-      top: 0; }
-    .menu .flexnav li ul li a {
-      border-bottom: none; }
-    .menu .flexnav li ul.open {
-      display: block;
-      opacity: 1;
-      visibility: visible;
-      z-index: 1; }
-    .menu .flexnav li ul.open li {
-      overflow: visible;
-      max-height: 100px; }
-    .menu .flexnav li ul.open ul.open {
-      margin-left: 100%;
-      top: 0; }
-    .menu .menu-button {
-      display: none; } }
-  .menu .oldie body.one-page {
-    padding-top: 70px; }
-  .menu .oldie .flexnav {
-    overflow: visible; }
-  .menu .oldie .flexnav.one-page {
-    top: 0;
-    right: auto;
-    max-width: 1080px; }
-  .menu .oldie .flexnav li {
-    position: relative;
+    color: #232323;
+    text-decoration: none;
+    display: block;
+    height: 100%; }
+  .menu li {
     list-style: none;
-    float: left;
-    display: block;
-    background-color: #a6a6a2;
-    width: 20%;
-    min-height: 50px;
-    overflow: visible; }
-  .menu .oldie .flexnav li:hover > ul {
-    display: block;
-    width: 100%;
-    overflow: visible; }
-  .menu .oldie .flexnav li:hover > ul li {
-    width: 100%;
-    float: none; }
-  .menu .oldie .flexnav li a {
-    border-left: 1px solid #acaca1;
-    border-bottom: none;
-    overflow: visible; }
-  .menu .oldie .flexnav li > ul {
-    background: #acaca1;
-    position: absolute;
-    top: auto;
-    left: 0;
+    position: relative; }
+  .menu .arrow {
     display: none;
-    z-index: 1;
-    overflow: visible; }
-  .menu .oldie .flexnav li ul li ul {
-    top: 0; }
-  .menu .oldie .flexnav li ul li a {
-    border-bottom: none; }
-  .menu .oldie .flexnav li ul.open {
-    display: block;
-    width: 100%;
-    overflow: visible; }
-  .menu .oldie .flexnav li ul.open li {
-    width: 100%; }
-  .menu .oldie .flexnav li ul.open ul.open {
-    margin-left: 100%;
-    top: 0;
-    display: block;
-    width: 100%;
-    overflow: visible; }
-  .menu .oldie .flexnav ul li:hover ul {
-    margin-left: 100%;
-    top: 0; }
-  .menu .oldie .menu-button {
-    display: none; }
-  .menu .oldie.ie7 .flexnav li {
-    width: 19.9%; }
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #000;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent; }
+    .menu .arrow.active {
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .menu__list > li {
+      height: 50px;
+      text-align: center;
+      width: 150px;
+      border-top: 1px solid transparent; }
+      .menu__list > li:hover {
+        border-top: 1px solid #000; }
+      .menu__list > li:nth-child(5) {
+        line-height: 15px; }
+      .menu__list > li > a {
+        padding-top: 17px; }
+    .menu__list-sub {
+      display: none;
+      padding: 20px 0 0 0;
+      position: absolute;
+      top: 30px;
+      left: -30px;
+      z-index: 999; }
+      .menu__list-sub > li {
+        width: 200px;
+        background-color: #fff;
+        padding-top: 15px; }
+        .menu__list-sub > li > a {
+          font-size: 13px; }
+
+body.mouse .menu__list > li:hover .menu__list-sub {
+  display: block; }
+
+body.touch .menu__list-sub.open {
+  display: block; }
+
+body.touch .arrow {
+  display: block; }
 
 .photo {
   max-width: 1400px;
