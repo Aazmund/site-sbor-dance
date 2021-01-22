@@ -58,30 +58,6 @@
         }
 
     }
-
-    &__search {
-        padding-bottom: 5px;
-        margin: 0 auto;
-
-        a {
-            font-family: $font;
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 30px;
-            text-decoration: none;
-            color: #929292;
-
-            i {
-                font-size: 18px;
-                vertical-align: middle;
-            }
-        }
-
-        input {
-            border: 1px solid #929292;
-            border-radius: 4px;
-        }
-    }
 }
 
 .header {
@@ -250,7 +226,9 @@
                 border-top: 1px solid #E3007B;
             }
 
-            &:nth-child(5) {
+            &:nth-child(5),
+            &:nth-child(1),
+            &:nth-child(2) {
                 line-height: 25px;
 
                 @media (max-width: 985px) {
@@ -331,108 +309,6 @@ body.touch .menu__list-sub.open {
 
 body.touch .arrow {
     display: block;
-}
-
-.photo {
-    max-width: 1400px;
-    margin: 0 auto;
-
-    .slide {
-
-
-        img {
-            width: 500px;
-            margin: 0 auto;
-        }
-    }
-
-}
-
-.info {
-    max-width: 1400px;
-    margin: 0 auto;
-
-    &-title {
-        font-family: $font;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 60px;
-        text-align: center;
-        margin-bottom: 70px;
-
-        @media (max-width: 800px) {
-            font-size: 40px;
-        }
-
-        @media (max-width: 600px) {
-            font-size: 25px;
-        }
-    }
-
-    &__wrap {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 50px;
-
-        a {
-            @media (max-width: 800px) {
-                width: 50%;
-                display: flex;
-                justify-content: center;
-
-                &:nth-child(n+3) {
-                    margin-top: 40px;
-                }
-            }
-        }
-
-        &-item {
-            max-width: 200px;
-
-            @media (max-width: 600px) {
-                max-width: 150px;
-                object-fit: contain;
-            }
-        }
-
-        @media (max-width: 800px) {
-            flex-wrap: wrap;
-        }
-    }
-}
-
-.partner {
-    max-width: 1400px;
-    margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
-
-    &-title {
-        font-family: $font;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 60px;
-        text-align: center;
-
-        @media (max-width: 800px) {
-            font-size: 40px;
-        }
-
-        @media (max-width: 600px) {
-            font-size: 25px;
-        }
-    }
-
-    &-item {
-        display: flex;
-        justify-content: center;
-
-        img {
-            @media (max-width: 800px) {
-                width: 300px;
-            }
-        }
-    }
 }
 
 .footer {

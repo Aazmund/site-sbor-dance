@@ -37,22 +37,6 @@
         font-size: 27px; }
       .contacts__link a .phone {
         font-size: 19px; }
-  .contacts__search {
-    padding-bottom: 5px;
-    margin: 0 auto; }
-    .contacts__search a {
-      font-family: "EB Garamond", serif;
-      font-size: 22px;
-      font-weight: 400;
-      line-height: 30px;
-      text-decoration: none;
-      color: #929292; }
-      .contacts__search a i {
-        font-size: 18px;
-        vertical-align: middle; }
-    .contacts__search input {
-      border: 1px solid #929292;
-      border-radius: 4px; }
 
 .header {
   padding-top: 25px;
@@ -186,16 +170,16 @@
           width: 150px; } }
       .menu__list > li:hover {
         border-top: 1px solid #E3007B; }
-      .menu__list > li:nth-child(5) {
+      .menu__list > li:nth-child(5), .menu__list > li:nth-child(1), .menu__list > li:nth-child(2) {
         line-height: 25px; }
         @media (max-width: 985px) {
-          .menu__list > li:nth-child(5) {
+          .menu__list > li:nth-child(5), .menu__list > li:nth-child(1), .menu__list > li:nth-child(2) {
             width: 280px;
             line-height: 17px; } }
-        .menu__list > li:nth-child(5) > a {
+        .menu__list > li:nth-child(5) > a, .menu__list > li:nth-child(1) > a, .menu__list > li:nth-child(2) > a {
           padding-top: 7px; }
           @media (max-width: 985px) {
-            .menu__list > li:nth-child(5) > a {
+            .menu__list > li:nth-child(5) > a, .menu__list > li:nth-child(1) > a, .menu__list > li:nth-child(2) > a {
               padding-top: 10px; } }
       .menu__list > li > a {
         padding-top: 17px; }
@@ -235,87 +219,6 @@ body.touch .menu__list-sub.open {
 
 body.touch .arrow {
   display: block; }
-
-.photo {
-  max-width: 1400px;
-  margin: 0 auto; }
-  .photo .slide img {
-    width: 500px;
-    margin: 0 auto; }
-
-.info {
-  max-width: 1400px;
-  margin: 0 auto; }
-  .info-title {
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: center;
-    margin-bottom: 70px; }
-    @media (max-width: 800px) {
-      .info-title {
-        font-size: 40px; } }
-    @media (max-width: 600px) {
-      .info-title {
-        font-size: 25px; } }
-  .info__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-bottom: 50px; }
-    @media (max-width: 800px) {
-      .info__wrap a {
-        width: 50%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .info__wrap a:nth-child(n+3) {
-          margin-top: 40px; } }
-    .info__wrap-item {
-      max-width: 200px; }
-      @media (max-width: 600px) {
-        .info__wrap-item {
-          max-width: 150px;
-          -o-object-fit: contain;
-             object-fit: contain; } }
-    @media (max-width: 800px) {
-      .info__wrap {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
-
-.partner {
-  max-width: 1400px;
-  margin: 0 auto;
-  margin-top: 80px;
-  margin-bottom: 80px; }
-  .partner-title {
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: center; }
-    @media (max-width: 800px) {
-      .partner-title {
-        font-size: 40px; } }
-    @media (max-width: 600px) {
-      .partner-title {
-        font-size: 25px; } }
-  .partner-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    @media (max-width: 800px) {
-      .partner-item img {
-        width: 300px; } }
 
 .footer {
   background-color: #232323;
