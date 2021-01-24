@@ -1,10 +1,10 @@
 $(".photo").slick({
-  dots: true,
+  dots: false,
   arrows: false,
   infinite: true,
   speed: 500,
   fade: true,
   cssEase: "linear",
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 3000,
 });

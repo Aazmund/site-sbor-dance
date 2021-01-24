@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
 .contacts {
-  border-bottom: 1px solid #929292; }
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #929292;
+  background: #fff;
+  z-index: 999; }
   .contacts-wrap {
     max-width: 1400px;
     margin: 0 auto;
@@ -115,7 +120,13 @@
         .header__text-subtitle {
           font-size: 15px; } }
 
+.bg {
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(10%, rgba(250, 78, 170, 0.2)), color-stop(51%, rgba(255, 0, 138, 0.2)), color-stop(90%, rgba(250, 78, 170, 0.2)), to(white));
+  background: linear-gradient(0deg, white 0%, rgba(250, 78, 170, 0.2) 10%, rgba(255, 0, 138, 0.2) 51%, rgba(250, 78, 170, 0.2) 90%, white 100%); }
+
 .menu {
+  padding-top: 10px;
   max-width: 1400px;
   margin: 0 auto; }
   .menu a {
@@ -189,14 +200,18 @@
       position: absolute;
       top: 45px;
       left: -3px;
-      z-index: 999; }
+      z-index: 990; }
       @media (max-width: 600px) {
         .menu__list-sub {
           top: 40px; } }
       .menu__list-sub > li {
         width: 200px;
-        background-color: #fff;
-        padding-top: 15px; }
+        background-color: #fedaed;
+        padding-top: 15px;
+        -webkit-box-shadow: 0 0 5px #fedaed;
+                box-shadow: 0 0 5px #fedaed; }
+        .menu__list-sub > li:last-child {
+          padding-bottom: 15px; }
         @media (max-width: 1400px) {
           .menu__list-sub > li {
             width: 170px; } }

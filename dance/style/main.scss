@@ -6,14 +6,17 @@
     margin: 0 auto;
 
     .slide {
+        padding-bottom: 50px;
 
+        &:focus {
+            outline: none;
+        }
 
         img {
             width: 500px;
             margin: 0 auto;
         }
     }
-
 }
 
 .info {

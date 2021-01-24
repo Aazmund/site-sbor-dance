@@ -2,9 +2,13 @@
 .photo {
   max-width: 1400px;
   margin: 0 auto; }
-  .photo .slide img {
-    width: 500px;
-    margin: 0 auto; }
+  .photo .slide {
+    padding-bottom: 50px; }
+    .photo .slide:focus {
+      outline: none; }
+    .photo .slide img {
+      width: 500px;
+      margin: 0 auto; }
 
 .info {
   max-width: 1400px;
