@@ -50,16 +50,16 @@
         <nav>
           <ul class="menu__list">
             <li>
-              <a href="">ГЛАВНАЯ СТРАНИЦА</a>
+              <a href="#">ГЛАВНАЯ СТРАНИЦА</a>
             </li>
             <li>
               <a href="#">СПОРТ ВЫСШИХ ДОСТИЖЕНИЙ</a>
             </li>
             <li>
-              <a href="">COVID-19</a>
+              <a href="#">COVID-19</a>
             </li>
             <li>
-              <a href="">О НАС</a>
+              <a href="#">О НАС</a>
               <span class="arrow menu-arrow"></span>
               <ul class="menu__list-sub">
                 <li><a href="pages/contacts.html">КОНТАКТЫ</a></li>
@@ -68,7 +68,7 @@
               </ul>
             </li>
             <li>
-              <a href="">ПРАВОВАЯ ИНФОРМАЦИЯ</a>
+              <a href="#">ПРАВОВАЯ ИНФОРМАЦИЯ</a>
             </li>
             <li>
               <a href="#">ЗАПИСЬ</a>
@@ -109,6 +109,29 @@
       </div>
     </div>
     <footer class="footer">
+      <form action="post" class="footer__form">
+        <div class="footer__form-col">
+          <label for="fio">ФИО</label>
+          <input id="fio" type="text" required />
+          <label for="number">Номер телефона</label>
+          <input id="number" type="tel" required />
+          <label for="mail">e-Mail</label>
+          <input id="mail" type="email" required />
+        </div>
+        <div class="footer__form-col">
+          <label for="date">Дата рождения</label>
+          <input id="date" type="date" required />
+          <label for="parent">ФИО родителя / законного представителя</label>
+          <input id="parent" type="text" />
+          <label for="vk">Ссылка Вконтакте</label>
+          <input id="vk" type="text" />
+        </div>
+        <div class="footer__form-col">
+          <label for="com">Комментарий</label>
+          <textarea name="com" id="com" cols="30" rows="5"></textarea>
+          <input type="submit" class="submit"></input>
+        </div>
+      </form>
       <div class="footer-wrap">
         <div class="footer__column">
           <h3 class="footer__column-title">ГОРОДСКОЙ ТАНЦЕВАЛЬНЫЙ ЦЕНТР</h3>
