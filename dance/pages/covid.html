@@ -9,13 +9,18 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/covid.css" />
     <link rel="stylesheet" href="../style/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
   </head>
   <body>
     <div class="contacts">
@@ -75,6 +80,20 @@
           </ul>
         </nav>
       </div>
+      <article class="covid">
+        <h1 class="covid-title">ИНФОРМАЦИЯ НА ВРЕМЯ КАРАНТИНА!!!</h1>
+        <div class="covid__box">
+          <a href="../img/protocol1.jpeg" data-fancybox="gallery">
+            <img src="../img/protocol1.jpeg" alt="" />
+          </a>
+          <a href="../img/protocol2.jpeg" data-fancybox="gallery">
+            <img src="../img/protocol2.jpeg" alt="" />
+          </a>
+          <a href="../img/protocol3.jpeg" data-fancybox="gallery">
+            <img src="../img/protocol3.jpeg" alt="" />
+          </a>
+        </div>
+      </article>
     </div>
 
     <footer class="footer">
@@ -119,5 +138,7 @@
       </div>
     </footer>
     <script src="../JS/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   </body>
 </html>
