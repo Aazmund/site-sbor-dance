@@ -360,6 +360,30 @@
     }
 }
 
+.filter-nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    button {
+        width: 100px;
+        height: 30px;
+        background-color: rgba(255, 0, 138, 0.1);
+        border: 2px solid transparent;
+
+        &:hover {
+            border: 2px solid #E3007B;
+            color: #E3007B;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
 body.mouse .menu__list>li:hover .menu__list-sub {
     display: block;
 
