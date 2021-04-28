@@ -40,9 +40,21 @@
       padding-bottom: 20px;
       border-bottom: 1px solid #000;
       font-size: 30px; }
+      .news__block-title-top {
+        font-family: "EB Garamond", serif;
+        padding-bottom: 20px;
+        border-top: 1px solid #000;
+        font-size: 30px; }
     .news__block-text {
       font-size: 20px;
       font-family: "EB Garamond", serif; }
+    .news__block img {
+      max-width: 700px;
+      display: block;
+      margin: 30px auto 0; }
+      @media (max-width: 375px) {
+        .news__block img {
+          width: 210px; } }
 
 .paginator {
   max-width: 1400px;

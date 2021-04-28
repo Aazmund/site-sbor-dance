@@ -78,23 +78,18 @@
       </div>
     </div>
 
-    <form action="post" class="form">      
-        <label id="label" for="fio">ФИО</label>
-        <input id="fio" type="text" required />
-        <label id="label" for="number">Номер телефона</label>
-        <input id="number" type="tel" required />
-        <label id="label" for="mail">e-Mail</label>
-        <input id="mail" type="email" required />        
-        <label id="label" for="date">Дата рождения</label>
-        <input id="date" type="date" required />
-        <label id="label" for="parent">ФИО родителя / законного представителя</label>
-        <input id="parent" type="text" />
-        <label id="label" for="vk">Ссылка Вконтакте</label>
-        <input id="vk" type="text" />
-        <label id="label" for="com">Комментарий</label>
-        <textarea name="com" id="com" cols="30" rows="7"></textarea>
-        <input input type="submit" class="submit"></input>
-  </form>
+    <form method = " post " class = " form ">
+      <input type = " hidden " name = " csrfmiddlewaretoken " value = " YX9T9fU8ccy1OXLIwHmLAHckkXq2oEp3f6F50uevOW4nxU32gAIzRHrGNVfryFOZ ">
+      <р> <метка для = " FIO "> ФИО * </ метка> <входной тип =" текст " название =" имя " ID =" FIO " имя =" FIO " MAXLENGTH =" 100 " требуется > </ р>
+      <p> <label for = " number "> Номер телефона * </label> <input type = " text " name = " number " maxlength = " 100 " id = " number " обязательно > </p>
+      <p> <label for = " mail "> Электронная почта * </label> <input type = " text " name = " mail " maxlength = " 100 " id = " mail " обязательно > </p>
+      <p> <label for = " date "> Дата рождения * </label> <input type = " text " name = " date " maxlength = " 100 " id = " date " обязательно > </p>
+      <p> <label for = " parent "> Имя родителя / представителя * </label> <input type = " text " name = " parent_name " maxlength = " 100 " id = " parent " обязательно > </p>
+      <p> <label for = " vk "> Ссылка на ВКонтакте </label> <input type = " text " name = " vk_link " maxlength = " 100 " id = " vk "> </p>
+      <p> <label for = " id_comment "> Комментарий </label> <textarea name = " comment " cols = " 40 " rows = " 10 " id = " id_comment ">
+      </textarea> </p>
+      <input type = " submit " class = " submit " />
+    </form>
 
     <footer class="footer">
       <div class="footer-wrap">

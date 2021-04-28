@@ -340,4 +340,10 @@ body.touch .arrow {
       .footer__column-map img {
         width: 70%; } }
 
+.pagination {
+  text-align: center; }
+  .pagination a {
+    text-decoration: none;
+    color: #E3007B; }
+
 /*# sourceMappingURL=style.css.map */
